@@ -1,0 +1,33 @@
+<html lang="en">
+    <head>
+        <title>Display Error Code</title>
+    </head>
+    <body bgcolor="#e6ffee">
+        <div class="one">
+            <div class="two">
+            <div class="content" align="center">
+                <div class="topbar">
+                    <h2>Welcome!! You are in ErrorCheck Page!! </h2>                        
+                </div>  </br>
+                <div class="contentbar">
+                    <h1>Hi !! There ?</h1>    </br>
+                     {% block content %}
+                        <div class="border">
+                            <table class="worddark"></br></br></br></br>
+                                <tr>
+                                    <td>Code:</td>
+                                    <td>{{ result['code'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Response:</td>
+                                    <td>{{ result['value'] }}</td>
+                                </tr>                    
+                            </table>
+                        </div>
+                    {% endblock %}                                           
+                </div>
+                  
+            </div>
+        </div>
+    </body>
+</html>
